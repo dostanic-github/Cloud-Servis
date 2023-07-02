@@ -1,0 +1,73 @@
+/* Header */
+.header {
+  .top-header {
+    .header-30,
+    .header-70 {
+      height: 50px;
+    }
+
+    .header-30 {
+      background-color: $lighter-blue;
+      min-width: 30%;
+
+      p {
+        font-size: 0.8rem;
+        color: $white;
+      }
+    }
+
+    .header-70 {
+      background-color: #f8f9fa;
+      min-width: 70%;
+
+      .th-70-info-box a {
+        font-size: 0.8rem;
+        color: $darker-blue;
+      }
+    }
+  }
+
+  .bottom-header {
+    background-color: $darker-blue;
+
+    .navbar-toggler {
+      box-shadow: none;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      color: $white;
+    }
+
+    .header-contact {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    .bottom-header {
+      .header-30,
+      .header-70 {
+        height: 70px;
+      }
+
+      .header-30 {
+        background-color: $darker-blue;
+        min-width: 30%;
+      }
+
+      .header-70 {
+        background-color: $white;
+        min-width: 70%;
+      }
+
+      .nav-link {
+        color: $darker-blue;
+      }
+    }
+  }
+}

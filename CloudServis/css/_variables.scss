@@ -1,0 +1,15 @@
+/* Variables */
+$lighter-blue: #031436;
+$darker-blue: #000e29;
+$white: #ffffff;
+$soft-white: #f4f4f4;
+$gray: #929292;
+$transition: all 300ms ease-in-out;
+
+/* Background Mixin */
+@mixin background-props {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

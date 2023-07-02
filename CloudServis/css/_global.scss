@@ -1,0 +1,107 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+p {
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Utility Classes */
+.logo {
+  width: 10rem;
+}
+
+.section {
+  padding: 5rem 1rem;
+
+  .section-title {
+    display: inline-block;
+    color: $darker-blue;
+    font-weight: 600;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      margin: 10px 0 0 5px;
+      background-color: $lighter-blue;
+    }
+  }
+
+  .cta {
+    display: inline-block;
+    min-width: 130px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    color: $white;
+    border-radius: 50px;
+    transition: $transition;
+
+    &.blue {
+      background-color: $lighter-blue;
+
+      &:hover {
+        background-color: #000a1e;
+      }
+    }
+
+    &.white {
+      background-color: $white;
+      color: $darker-blue;
+
+      &:hover {
+        background-color: $lighter-blue;
+        color: $white;
+      }
+    }
+
+    &.no-hover:hover {
+      pointer-events: none;
+    }
+  }
+}
+
+.text-section {
+  max-width: 1000px;
+  padding: 3rem 1rem;
+
+  .table {
+    max-width: 800px;
+  }
+}
+
+.call-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: $lighter-blue;
+  border: 1px solid #f4f4f4;
+  padding-right: 20px;
+  transition: $transition;
+
+  img {
+    margin-right: 10px;
+  }
+
+  p {
+    color: #f4f4f4;
+  }
+
+  &:hover {
+    background-color: $darker-blue;
+  }
+}

@@ -1,0 +1,44 @@
+.footer {
+  color: $white;
+
+  .footer-top {
+    background-color: $darker-blue;
+    padding: 4rem 1rem 3rem 1rem;
+
+    .logo {
+      width: 15rem;
+    }
+
+    p {
+      max-width: 200px;
+      font-weight: 300;
+    }
+
+    h5 {
+      &::before {
+        content: "*";
+        color: #f8f9fa;
+        margin-right: 5px;
+        transition: $transition;
+      }
+    }
+
+    li {
+      a {
+        color: $white;
+        transition: $transition;
+      }
+    }
+  }
+
+  .footer-bottom {
+    background-color: #000d24;
+    padding: 1rem;
+
+    .copyright {
+      span {
+        color: #f8f9fa;
+      }
+    }
+  }
+}

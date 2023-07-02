@@ -1,0 +1,106 @@
+/* For Fixed Header */
+.main {
+  padding-top: 75px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    padding-top: 120px;
+  }
+}
+
+/* Banner Section */
+.banner-section {
+  background: url("/assets/images/hero/hero.png");
+  @include background-props;
+  min-height: 500px;
+  color: $white;
+
+  h1 {
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 0.9rem;
+    max-width: 600px;
+    line-height: 1.8;
+  }
+}
+
+/* About Section */
+.about-section {
+  .about-text {
+    max-width: 400px;
+
+    p {
+      color: $gray;
+    }
+  }
+
+  .about-image {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  }
+}
+
+/* Services Section */
+.services-section {
+  .services-text {
+    max-width: 350px;
+
+    p {
+      color: $gray;
+    }
+  }
+
+  .service-box {
+    img {
+      width: 3rem;
+    }
+
+    h6 {
+      font-weight: 700;
+    }
+
+    p {
+      max-width: 200px;
+      font-size: 0.8rem;
+      color: $gray;
+    }
+  }
+}
+
+/* Reasons Section */
+.reasons-section {
+  background-color: #fbfbfb;
+
+  .reason-child {
+    color: $lighter-blue;
+
+    img {
+      width: 50px;
+    }
+
+    p {
+      max-width: 300px;
+    }
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  background: url("/assets/images/contact/contact.png");
+  @include background-props;
+  width: 100%;
+  min-height: 400px;
+  color: $white;
+
+  p {
+    color: #f4f4f4;
+    max-width: 800px;
+  }
+}

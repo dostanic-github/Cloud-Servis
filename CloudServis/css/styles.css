@@ -1,0 +1,276 @@
+/* Roboto Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/* Sass Partials */
+/* Variables */
+/* Background Mixin */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+p {
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Utility Classes */
+.logo {
+  width: 10rem;
+}
+
+.section {
+  padding: 5rem 1rem;
+}
+.section .section-title {
+  display: inline-block;
+  color: #000e29;
+  font-weight: 600;
+}
+.section .section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 10px 0 0 5px;
+  background-color: #031436;
+}
+.section .cta {
+  display: inline-block;
+  min-width: 130px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem 2rem;
+  color: #ffffff;
+  border-radius: 50px;
+  transition: all 300ms ease-in-out;
+}
+.section .cta.blue {
+  background-color: #031436;
+}
+.section .cta.blue:hover {
+  background-color: #000a1e;
+}
+.section .cta.white {
+  background-color: #ffffff;
+  color: #000e29;
+}
+.section .cta.white:hover {
+  background-color: #031436;
+  color: #ffffff;
+}
+.section .cta.no-hover:hover {
+  pointer-events: none;
+}
+
+.text-section {
+  max-width: 1000px;
+  padding: 3rem 1rem;
+}
+.text-section .table {
+  max-width: 800px;
+}
+
+.call-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #031436;
+  border: 1px solid #f4f4f4;
+  padding-right: 20px;
+  transition: all 300ms ease-in-out;
+}
+.call-cta img {
+  margin-right: 10px;
+}
+.call-cta p {
+  color: #f4f4f4;
+}
+.call-cta:hover {
+  background-color: #000e29;
+}
+
+/* Header */
+.header .top-header .header-30,
+.header .top-header .header-70 {
+  height: 50px;
+}
+.header .top-header .header-30 {
+  background-color: #031436;
+  min-width: 30%;
+}
+.header .top-header .header-30 p {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.header .top-header .header-70 {
+  background-color: #f8f9fa;
+  min-width: 70%;
+}
+.header .top-header .header-70 .th-70-info-box a {
+  font-size: 0.8rem;
+  color: #000e29;
+}
+.header .bottom-header {
+  background-color: #000e29;
+}
+.header .bottom-header .navbar-toggler {
+  box-shadow: none;
+}
+.header .bottom-header .nav-link {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.header .bottom-header .header-contact a {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 992px) {
+  .header .bottom-header .header-30,
+  .header .bottom-header .header-70 {
+    height: 70px;
+  }
+  .header .bottom-header .header-30 {
+    background-color: #000e29;
+    min-width: 30%;
+  }
+  .header .bottom-header .header-70 {
+    background-color: #ffffff;
+    min-width: 70%;
+  }
+  .header .bottom-header .nav-link {
+    color: #000e29;
+  }
+}
+/* For Fixed Header */
+.main {
+  padding-top: 75px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    padding-top: 120px;
+  }
+}
+/* Banner Section */
+.banner-section {
+  background: url("/assets/images/hero/hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  color: #ffffff;
+}
+.banner-section h1 {
+  font-weight: 600;
+  line-height: 1.4;
+}
+.banner-section p {
+  font-size: 0.9rem;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+/* About Section */
+.about-section .about-text {
+  max-width: 400px;
+}
+.about-section .about-text p {
+  color: #929292;
+}
+.about-section .about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Services Section */
+.services-section .services-text {
+  max-width: 350px;
+}
+.services-section .services-text p {
+  color: #929292;
+}
+.services-section .service-box img {
+  width: 3rem;
+}
+.services-section .service-box h6 {
+  font-weight: 700;
+}
+.services-section .service-box p {
+  max-width: 200px;
+  font-size: 0.8rem;
+  color: #929292;
+}
+
+/* Reasons Section */
+.reasons-section {
+  background-color: #fbfbfb;
+}
+.reasons-section .reason-child {
+  color: #031436;
+}
+.reasons-section .reason-child img {
+  width: 50px;
+}
+.reasons-section .reason-child p {
+  max-width: 300px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: url("/assets/images/contact/contact.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 400px;
+  color: #ffffff;
+}
+.contact-section p {
+  color: #f4f4f4;
+  max-width: 800px;
+}
+
+.footer {
+  color: #ffffff;
+}
+.footer .footer-top {
+  background-color: #000e29;
+  padding: 4rem 1rem 3rem 1rem;
+}
+.footer .footer-top .logo {
+  width: 15rem;
+}
+.footer .footer-top p {
+  max-width: 200px;
+  font-weight: 300;
+}
+.footer .footer-top h5::before {
+  content: "*";
+  color: #f8f9fa;
+  margin-right: 5px;
+  transition: all 300ms ease-in-out;
+}
+.footer .footer-top li a {
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+.footer .footer-bottom {
+  background-color: #000d24;
+  padding: 1rem;
+}
+.footer .footer-bottom .copyright span {
+  color: #f8f9fa;
+}/*# sourceMappingURL=styles.css.map */
